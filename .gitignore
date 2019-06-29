@@ -1,0 +1,22 @@
+*.py[co]
+__pycache__
+_graveyard
+venv
+data
+tensorflow
+out
+test/functional/data
+dialogue_system/emotion_recognition/utils/
+dialogue_system/dialogue/utils/
+*.zip
+
+# Environment-specific
+.cache
+.idea
+
+#datasets and models
+*.hdf5
+*.xml
+*.h5
+*.json
+key.json
