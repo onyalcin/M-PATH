@@ -51,7 +51,7 @@ matplotlib==3.0.2
 mock==2.0.0
 more-itertools==5.0.0
 murmurhash==1.0.2
-nltk==3.2.5
+nltk==3.4.5
 numba==0.42.0
 numpy==1.15.4
 opencv-contrib-python==3.4.4.19
@@ -79,8 +79,8 @@ pytest==4.0.2
 python-dateutil==2.7.5
 python-Levenshtein==0.12.0
 pytz==2018.7
-PyYAML==3.13
-requests==2.18.4
+PyYAML==5.1
+requests==2.21.0
 resampy==0.2.1
 rsa==3.4.2
 s3transfer==0.2.0
@@ -96,6 +96,6 @@ tensorflow==1.13.1
 termcolor==1.1.0
 thinc==7.0.4
 tqdm==4.31.1
-urllib3==1.22
+urllib3==1.24.2
 wasabi==0.2.0
-Werkzeug==0.14.1
+Werkzeug==0.15.3
