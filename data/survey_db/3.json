@@ -1,0 +1,55 @@
+{
+  "name": "1",
+  "questions": [
+    {
+      "id": 3,
+      "type": "multiple_choice",
+      "utterance": "How often have you had trouble falling or staying asleep or sleeping too much?",
+      "choices": [
+        {
+          "text": "positive",
+          "reaction": "negative",
+          "actions": ["offer_tips"],
+          "sentiment": 0.2
+        },
+        {
+          "text": "neutral",
+          "reaction": "neutral",
+          "actions": [],
+          "sentiment": 0.5
+        },
+        {
+          "text": "negative",
+          "reaction": "positive",
+          "actions": [],
+          "sentiment": 1
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "multiple_choice",
+      "utterance": "How often have you been feeling tired or low energy?",
+      "choices": [
+        {
+          "text": "positive",
+          "reaction": "negative",
+          "actions": ["offer_tips"],
+          "sentiment": 0.2
+        },
+        {
+          "text": "neutral",
+          "reaction": "neutral",
+          "actions": [],
+          "sentiment": 0.5
+        },
+        {
+          "text": "negative",
+          "reaction": "positive",
+          "actions": [],
+          "sentiment": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "end",
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "utterance": "",
+      "choices": [
+        {
+          "text": "sad",
+          "reaction": "negative end",
+          "actions": ["offer_tips"],
+          "sentiment": 0.2
+        },
+        {
+          "text": "joy",
+          "reaction": "positive end",
+          "actions": ["@end"],
+          "sentiment": 0.4
+        },
+        {
+          "text": "neutral",
+          "reaction": "positive end2",
+          "actions": ["offer_tips"],
+          "sentiment": 0.4
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "open_ended",
+      "utterance": "Let me know if I can help you in anything else"
+    },
+    {
+      "id": 3,
+      "type": "open_ended",
+      "utterance": "Have a wonderful day!"
+    }
+  ]
+}

@@ -7,7 +7,7 @@ from .stomp_sender import StompSender
 logger = logging.getLogger().getChild(__name__)
 
 class SmartBody:
-    def __init__(self, character_name='ChrRachel'):
+    def __init__(self, character_name='ChrBrad'):
         self._stomp = None
         self._character_name = character_name
 

@@ -1,0 +1,131 @@
+{ # TODO: Have a better layout, such as keyword, gesture_category
+  "agree": {
+    "keywords": ["yes", "yeah", "sure", "here", "right"],
+    "gestures": [
+      ["Gesture_BeatLowLf01"],
+      ["Gesture_BeatLowLf02"],
+      ["Gesture_BeatLowRt01"],
+      ["Gesture_ChopLf01"],
+      ["Gesture_PleaBt02"]
+    ]
+  },
+  "annoyed":{
+    "keywords":["jersey"],
+    "gestures":[
+      ["Gesture_BeatHighBt03"],
+      ["Gesture_BeatLowBt02"],
+      ["Gesture_NegativeBt02"]
+    ]
+  },
+  "stop":{
+    "keywords":["stop", "boring"],
+    "gestures":[
+      ["Gesture_StopBt01"]
+    ]
+  },
+  "disagree":{
+    "keywords":["no", "nah", "nothing", "cannot", "can't", "don't", "didn't", "couldn't", "isn't", "wasn't", "never", "not", "nope"],
+    "gestures":[
+      ["Gesture_BeatPointMidLf01"],
+      ["Gesture_BesidesLf01"],
+      ["Gesture_NegativeBt01"],
+      ["Gesture_NegativeBt02"],
+      ["Gesture_NegativeRt01"],
+      ["Gesture_SafeLf01"],
+      ["Gesture_SafeLf012x"],
+      ["Gesture_NEGATION", "Face_NEGATION", "Head_NEGATION"]
+    ]
+  },
+  "however":{
+    "keywords":["but", "however"],
+    "gestures":[
+      ["Gesture_HoweverLf01"],
+      ["Gesture_CONTRAST", "Face_NEGATION"]
+    ]
+  },
+  "excited":{
+    "keywords":["really", "very", "quite", "wonderful", "great", "absolutely", "huge", "fantastic", "amazing", "important", "good", "nice"],
+    "gestures":[
+      ["Gesture_BeatFistMidLf01"],
+      ["Gesture_BeatFistMidLf02"],
+      ["Gesture_BEAT", "Face_EXCITED"]
+    ]
+  },
+  "comparison":{
+    "keywords":["on one hand", "firstly",  "then", "so", "sure", "on the other hand"],
+    "gestures":[
+      ["Gesture_BEAT"]
+    ]
+  },
+  "additive":{
+    "keywords":["besides", "never the less",  "anyway"],
+    "gestures":[
+      ["Gesture__BesidesLf01"]
+    ]
+  },
+  "okay":{
+    "keywords":["so", "okay", "there", "ookay"],
+    "gestures":[
+      ["Gesture__ChopBoth01"]
+    ]
+  },
+  "example":{
+    "keywords":["example", "then", "well", "instance"],
+    "gestures":[
+      ["Gesture_ExampleLf01"],
+      ["Gesture_OfferLf01"],
+      ["Gesture_YouLf03"]
+    ]
+  },
+  "dominant":{
+    "keywords":["exactly", "listen", "must"],
+    "gestures":[
+      ["Gesture_BeatFistMidLf01"],
+      ["Gesture_BeatFistMidLf02"],
+      ["Gesture_BeatPointMidLf01"],
+      ["Gesture_ChopBoth01"]
+    ]
+  },
+  "inclusive":{
+    "keywords":["everything", "all", "whole", "full", "completely", "mostly"],
+    "gestures":[
+      ["Gesture_INCLUSIVITY"],
+      ["Gesture_OfferLf01"]
+    ]
+  },
+  "me":{
+    "keywords":["me", "my", "i", "mine", "AI", "ay eye", "personality"],
+    "gestures":[
+      ["Gesture_MeLf01"],
+      ["Gesture_MeLf02"]
+    ]
+  },
+  "question":{
+    "keywords":["why", "when", "what", "where", "how", "do"],
+    "gestures":[
+      ["Face_QUESTION","Gesture_QUESTION"],
+      ["Gesture_OfferLf01"],
+      ["Gesture_PLeaBt02"]
+    ]
+  },
+  "you":{
+    "keywords":["you"],
+    "gestures":[
+      ["Gesture_ChopLf01"],
+      ["Gesture_OfferLf01"],
+      ["Gesture_YouLf01"],
+      ["Gesture_YouLf03"]
+    ]
+  },
+  "uncertain":{
+    "keywords":["I don't know", "well", "maybe", "might", "perhaps", "potentially"],
+    "gestures":[
+      ["Gesture_BeatHighBt01"],
+      ["Gesture_BeatHighBt012x"],
+      ["Gesture_BeatHighBt02"],
+      ["Gesture_BeatHighBt022x"],
+      ["Gesture_ExampleLf01"],
+      ["Gesture_ReceivedRt01"]
+    ]
+  }
+}

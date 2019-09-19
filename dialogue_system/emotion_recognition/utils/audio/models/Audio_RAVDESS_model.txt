@@ -1,0 +1,102 @@
+{"class_name": "Model",
+	 "config": {"layers": [
+
+{"class_name": "InputLayer",
+	 "config": {"dtype": "float32", "batch_input_shape": [null, 1, 96, 80], "name": "Audio_Network_Input", "sparse": false}, "inbound_nodes": [], "name": "Audio_Network_Input"}, 
+
+{"class_name": "Conv2D",
+	 "config": {"kernel_constraint": null, "kernel_initializer": 
+{"class_name": "VarianceScaling",
+	 "config": {"distribution": "uniform", "scale": 1.0, "seed": null, "mode": "fan_avg"}}, "name": "conv1", "bias_regularizer": null, "bias_constraint": null, "activation": "linear", "trainable": true, "data_format": "channels_first", "padding": "same", "strides": [1, 1], "dilation_rate": [1, 1], "kernel_regularizer": null, "filters": 16, "bias_initializer": 
+{"class_name": "Zeros",
+	 "config": {}}, "use_bias": true, "activity_regularizer": null, "kernel_size": [7, 7]}, "inbound_nodes": [[["Audio_Network_Input", 0, 0, {}]]], "name": "conv1"}, 
+
+{"class_name": "BatchNormalization",
+	 "config": {"beta_constraint": null, "gamma_initializer": 
+{"class_name": "Ones",
+	 "config": {}}, "moving_mean_initializer": 
+{"class_name": "Zeros",
+	 "config": {}}, "name": "batch_normalization_1", "epsilon": 0.001, "trainable": true, "moving_variance_initializer": 
+{"class_name": "Ones",
+	 "config": {}}, "beta_initializer": 
+{"class_name": "Zeros",
+	 "config": {}}, "scale": true, "axis": 1, "gamma_constraint": null, "gamma_regularizer": null, "beta_regularizer": null, "momentum": 0.99, "center": true}, "inbound_nodes": [[["conv1", 0, 0, {}]]], "name": "batch_normalization_1"}, 
+
+{"class_name": "Activation",
+	 "config": {"activation": "relu", "trainable": true, "name": "activation_1"}, "inbound_nodes": [[["batch_normalization_1", 0, 0, {}]]], "name": "activation_1"}, 
+
+{"class_name": "MaxPooling2D",
+	 "config": {"name": "v_Pool_1", "trainable": true, "data_format": "channels_first", "pool_size": [2, 2], "padding": "valid", "strides": [2, 2]}, "inbound_nodes": [[["activation_1", 0, 0, {}]]], "name": "v_Pool_1"}, 
+
+{"class_name": "Dropout",
+	 "config": {"rate": 0.2, "noise_shape": null, "trainable": true, "seed": null, "name": "dropout_1"}, "inbound_nodes": [[["v_Pool_1", 0, 0, {}]]], "name": "dropout_1"}, 
+
+{"class_name": "Conv2D",
+	 "config": {"kernel_constraint": null, "kernel_initializer": 
+{"class_name": "VarianceScaling",
+	 "config": {"distribution": "uniform", "scale": 1.0, "seed": null, "mode": "fan_avg"}}, "name": "conv2", "bias_regularizer": null, "bias_constraint": null, "activation": "linear", "trainable": true, "data_format": "channels_first", "padding": "same", "strides": [1, 1], "dilation_rate": [1, 1], "kernel_regularizer": null, "filters": 32, "bias_initializer": 
+{"class_name": "Zeros",
+	 "config": {}}, "use_bias": true, "activity_regularizer": null, "kernel_size": [7, 7]}, "inbound_nodes": [[["dropout_1", 0, 0, {}]]], "name": "conv2"}, 
+
+{"class_name": "BatchNormalization",
+	 "config": {"beta_constraint": null, "gamma_initializer": 
+{"class_name": "Ones",
+	 "config": {}}, "moving_mean_initializer": 
+{"class_name": "Zeros",
+	 "config": {}}, "name": "batch_normalization_2", "epsilon": 0.001, "trainable": true, "moving_variance_initializer": 
+{"class_name": "Ones",
+	 "config": {}}, "beta_initializer": 
+{"class_name": "Zeros",
+	 "config": {}}, "scale": true, "axis": 1, "gamma_constraint": null, "gamma_regularizer": null, "beta_regularizer": null, "momentum": 0.99, "center": true}, "inbound_nodes": [[["conv2", 0, 0, {}]]], "name": "batch_normalization_2"}, 
+
+{"class_name": "Activation",
+	 "config": {"activation": "relu", "trainable": true, "name": "activation_2"}, "inbound_nodes": [[["batch_normalization_2", 0, 0, {}]]], "name": "activation_2"}, 
+
+{"class_name": "MaxPooling2D",
+	 "config": {"name": "max_pooling2d_1", "trainable": true, "data_format": "channels_first", "pool_size": [2, 2], "padding": "valid", "strides": [2, 2]}, "inbound_nodes": [[["activation_2", 0, 0, {}]]], "name": "max_pooling2d_1"}, 
+
+{"class_name": "Dropout",
+	 "config": {"rate": 0.2, "noise_shape": null, "trainable": true, "seed": null, "name": "dropout_2"}, "inbound_nodes": [[["max_pooling2d_1", 0, 0, {}]]], "name": "dropout_2"}, 
+
+{"class_name": "Conv2D",
+	 "config": {"kernel_constraint": null, "kernel_initializer": 
+{"class_name": "VarianceScaling",
+	 "config": {"distribution": "uniform", "scale": 1.0, "seed": null, "mode": "fan_avg"}}, "name": "conv10", "bias_regularizer": null, "bias_constraint": null, "activation": "relu", "trainable": true, "data_format": "channels_first", "padding": "same", "strides": [1, 1], "dilation_rate": [1, 1], "kernel_regularizer": null, "filters": 32, "bias_initializer": 
+{"class_name": "Zeros",
+	 "config": {}}, "use_bias": true, "activity_regularizer": null, "kernel_size": [7, 7]}, "inbound_nodes": [[["dropout_2", 0, 0, {}]]], "name": "conv10"}, 
+
+{"class_name": "Conv2D",
+	 "config": {"kernel_constraint": null, "kernel_initializer": 
+{"class_name": "VarianceScaling",
+	 "config": {"distribution": "uniform", "scale": 1.0, "seed": null, "mode": "fan_avg"}}, "name": "conv10_inhibition", "bias_regularizer": null, "bias_constraint": null, "activation": "relu", "trainable": true, "data_format": "channels_first", "padding": "same", "strides": [1, 1], "dilation_rate": [1, 1], "kernel_regularizer": null, "filters": 32, "bias_initializer": 
+{"class_name": "Zeros",
+	 "config": {}}, "use_bias": true, "activity_regularizer": null, "kernel_size": [7, 7]}, "inbound_nodes": [[["dropout_2", 0, 0, {}]]], "name": "conv10_inhibition"}, 
+
+{"class_name": "Lambda",
+	 "config": {"function": ["c\\u0001\\u0000\\u0000\\u0000\\u0005\\u0000\\u0000\\u0000\\u0003\\u0000\\u0000\\u0000S\\u0000\\u0000\\u0000s$\\u0000\\u0000\\u0000d\\u0001\\u0000}\\u0001\\u0000|\\u0000\\u0000\\\\\\u0002\\u0000}\\u0002\\u0000}\\u0003\\u0000|\\u0002\\u0000|\\u0001\\u0000|\\u0003\\u0000\\u0017\\u0015}\\u0004\\u0000|\\u0004\\u0000S(\\u0002\\u0000\\u0000\\u0000Ng\\u009a\\u0099\\u0099\\u0099\\u0099\\u0099\\u00b9?(\\u0000\\u0000\\u0000\\u0000(\\u0005\\u0000\\u0000\\u0000t\\u0006\\u0000\\u0000\\u0000inputst\\u000f\\u0000\\u0000\\u0000inhibitionDecayt\\u0003\\u0000\\u0000\\u0000v_ct\\u000b\\u0000\\u0000\\u0000v_c_inhibitt\\u0006\\u0000\\u0000\\u0000output(\\u0000\\u0000\\u0000\\u0000(\\u0000\\u0000\\u0000\\u0000s7\\u0000\\u0000\\u0000/data/code/KEF/KEF/Implementations/Audio_CNN_RAVDESS.pyt\\u0012\\u0000\\u0000\\u0000shuntingInhibition?\\u0000\\u0000\\u0000s\\n\\u0000\\u0000\\u0000\\u0000\\u0001\\u0006\\u0002\\f\\u0002\\u0006\\u0001\\b\\u0002", null, null], "name": "lambda_1", "trainable": true, "function_type": "lambda", "arguments": {}, "output_shape": null, "output_shape_type": "raw"}, "inbound_nodes": [[["conv10", 0, 0, {}], ["conv10_inhibition", 0, 0, {}]]], "name": "lambda_1"}, 
+
+{"class_name": "MaxPooling2D",
+	 "config": {"name": "max_pooling2d_2", "trainable": true, "data_format": "channels_first", "pool_size": [2, 2], "padding": "valid", "strides": [2, 2]}, "inbound_nodes": [[["lambda_1", 0, 0, {}]]], "name": "max_pooling2d_2"}, 
+
+{"class_name": "Dropout",
+	 "config": {"rate": 0.2, "noise_shape": null, "trainable": true, "seed": null, "name": "dropout_3"}, "inbound_nodes": [[["max_pooling2d_2", 0, 0, {}]]], "name": "dropout_3"}, 
+
+{"class_name": "Flatten",
+	 "config": {"trainable": true, "name": "flatten_1"}, "inbound_nodes": [[["dropout_3", 0, 0, {}]]], "name": "flatten_1"}, 
+
+{"class_name": "Dense",
+	 "config": {"kernel_initializer": 
+{"class_name": "VarianceScaling",
+	 "config": {"distribution": "uniform", "scale": 1.0, "seed": null, "mode": "fan_avg"}}, "name": "dense_1", "kernel_constraint": null, "bias_regularizer": null, "bias_constraint": null, "activation": "relu", "trainable": true, "kernel_regularizer": null, "bias_initializer": 
+{"class_name": "Zeros",
+	 "config": {}}, "units": 50, "use_bias": true, "activity_regularizer": null}, "inbound_nodes": [[["flatten_1", 0, 0, {}]]], "name": "dense_1"}, 
+
+{"class_name": "Dropout",
+	 "config": {"rate": 0.2, "noise_shape": null, "trainable": true, "seed": null, "name": "dropout_4"}, "inbound_nodes": [[["dense_1", 0, 0, {}]]], "name": "dropout_4"}, 
+
+{"class_name": "Dense",
+	 "config": {"kernel_initializer": 
+{"class_name": "VarianceScaling",
+	 "config": {"distribution": "uniform", "scale": 1.0, "seed": null, "mode": "fan_avg"}}, "name": "CategoricalOutput", "kernel_constraint": null, "bias_regularizer": null, "bias_constraint": null, "activation": "softmax", "trainable": true, "kernel_regularizer": null, "bias_initializer": 
+{"class_name": "Zeros",
+	 "config": {}}, "units": 6, "use_bias": true, "activity_regularizer": null}, "inbound_nodes": [[["dropout_4", 0, 0, {}]]], "name": "CategoricalOutput"}], "input_layers": [["Audio_Network_Input", 0, 0]], "output_layers": [["CategoricalOutput", 0, 0]], "name": "model_1"}}

@@ -56,7 +56,7 @@ class SurveyController:
         return self._responses
 
     def _on_input_survey(self, user_id, answer_text):
-        logger.debug('Processing survey answer')
+        logger.debug('Processing survey answer %s', answer_text)
         survey_instance = self._survey_service.get_current_survey_instance(user_id)
         choice, question_id = self._survey_service.check_and_return(survey_instance, answer_text)
         logger.debug('Processing choice')

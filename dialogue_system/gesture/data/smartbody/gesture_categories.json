@@ -1,0 +1,193 @@
+{  "agree": {
+    "keywords": ["yes", "yeah", "sure", "here", "right"],
+    "gestures": [
+      ["Gesture_BeatLowLf01"],
+      ["Gesture_BeatLowLf02"],
+      ["Gesture_BeatLowRt01"],
+      ["Gesture_ChopLf01"],
+      ["Gesture_PleaBt02"]
+    ]
+  },
+  "annoyed":{
+    "keywords":["jersey"],
+    "gestures":[
+      ["Gesture_BeatHighBt03"],
+      ["Gesture_BeatLowBt02"],
+      ["Gesture_NegativeBt02"]
+    ]
+  },
+  "stop":{
+    "keywords":["stop", "boring"],
+    "gestures":[
+      ["Gesture_StopBt01"]
+    ]
+  },
+  "disagree":{
+    "keywords":["no", "nah", "nothing", "cannot", "can't", "don't", "didn't", "couldn't", "isn't", "wasn't", "never", "not", "nope"],
+    "gestures":[
+      ["Gesture_BeatPointMidLf01"],
+      ["Gesture_BesidesLf01"],
+      ["Gesture_NegativeBt01"],
+      ["Gesture_NegativeBt02"],
+      ["Gesture_NegativeRt01"],
+      ["Gesture_SafeLf01"],
+      ["Gesture_SafeLf012x"],
+      ["Gesture_NEGATION", "Face_NEGATION", "Head_NEGATION"]
+    ]
+  },
+  "however":{
+    "keywords":["but", "however"],
+    "gestures":[
+      ["Gesture_HoweverLf01"],
+      ["Gesture_CONTRAST", "Face_NEGATION"]
+    ]
+  },
+  "excited":{
+    "keywords":["really", "very", "quite", "wonderful", "great", "absolutely", "huge", "fantastic", "amazing", "important", "good", "nice"],
+    "gestures":[
+      ["Gesture_BeatFistMidLf01"],
+      ["Gesture_BeatFistMidLf02"],
+      ["Gesture_BEAT", "Face_EXCITED"]
+    ]
+  },
+  "comparison":{
+    "keywords":["on one hand", "firstly",  "then", "so", "sure", "on the other hand"],
+    "gestures":[
+      ["Gesture_BEAT"]
+    ]
+  },
+  "additive":{
+    "keywords":["besides", "never the less",  "anyway"],
+    "gestures":[
+      ["Gesture_BesidesLf01"]
+    ]
+  },
+  "okay":{
+    "keywords":["so", "okay", "there"],
+    "gestures":[
+      ["Gesture_ChopBoth01"]
+    ]
+  },
+  "example":{
+    "keywords":["example", "then", "instance"],
+    "gestures":[
+      ["Gesture_ExampleLf01"],
+      ["Gesture_OfferLf01"],
+      ["Gesture_YouLf03"]
+    ]
+  },
+  "dominant":{
+    "keywords":["exactly", "listen", "must"],
+    "gestures":[
+      ["Gesture_BeatFistMidLf01"],
+      ["Gesture_BeatFistMidLf02"],
+      ["Gesture_BeatPointMidLf01"],
+      ["Gesture_ChopBoth01"]
+    ]
+  },
+  "inclusive":{
+    "keywords":["everything", "all", "whole", "full", "completely", "mostly"],
+    "gestures":[
+      ["Gesture_INCLUSIVITY"],
+      ["Gesture_OfferLf01"]
+    ]
+  },
+  "me":{
+    "keywords":["me", "my", "i", "mine", "AI", "ay eye", "personality"],
+    "gestures":[
+      ["Gesture_MeLf01"],
+      ["Gesture_MeLf02"]
+    ]
+  },
+  "question":{
+    "keywords":["why", "when", "what", "where", "how", "do"],
+    "gestures":[
+      ["Face_QUESTION","Gesture_QUESTION"],
+      ["Gesture_OfferLf01"],
+      ["Gesture_PleaBt02"]
+    ]
+  },
+  "you":{
+    "keywords":["you"],
+    "gestures":[
+      ["Gesture_ChopLf01"],
+      ["Gesture_OfferLf01"],
+      ["Gesture_YouLf01"],
+      ["Gesture_YouLf03"]
+    ]
+  },
+  "uncertain":{
+    "keywords":["I don't know", "maybe", "might", "perhaps", "potentially"],
+    "gestures":[
+      ["Gesture_BeatHighBt01"],
+      ["Gesture_BeatHighBt02"],
+      ["Gesture_ExampleLf01"],
+      ["Gesture_ReceivedRt01"]
+    ]
+  },
+  "beats":{
+    "keywords":[],
+    "gestures":[
+      ["Gesture_LeftHand"],
+      ["Gesture_RightHand"],
+      ["Gesture_BeatHighBt02"],
+      ["Gesture_BeatLowBt01"],
+      ["Gesture_BeatMidBt01"],
+      ["Gesture_BeatLowLf01"],
+      ["Gesture_BeatLowLf02"],
+      ["Gesture_BeatLowRt01"],
+      ["Gesture_BeatMidLf01"],
+      ["Gesture_ChopBoth01"],
+      ["Gesture_ChopLf01"],
+      ["Gesture_ExampleLf01"],
+      ["Gesture_IndicateRightRt01"],
+      ["Gesture_OfferBoth01"],
+      ["Gesture_OfferLf01"],
+      ["Gesture_LeftHand"],
+      ["Gesture_RightHand"]
+    ]
+  },
+  "gazing":{
+    "keywords":[],
+    "gestures":[
+      ["Gaze_enRightTilt"],
+      ["Gaze_enLeftTilt"],
+      ["Gaze_enRightDown"],
+      ["Gaze_enLeftDown"],
+      ["Gaze_enDown"],
+      ["Gaze_enLeft1"],
+      ["Gaze_enLeft2"],
+      ["Gaze_enLeft3"],
+      ["Gaze_enRight1"],
+      ["Gaze_enRight2"],
+      ["Gaze_enRight3"]
+    ]
+  },
+  "Listening":{
+    "keywords":[],
+    "gestures":[
+      ["Head_NOD3"],
+      ["Head_NOD3"],
+      ["Head_NOD2"],
+      ["Head_WIGGLE"],
+      ["Head_WAGGLE"]
+    ]
+  },
+  "Idle": {
+    "keywords": [],
+    "gestures": [
+      ["Gesture_TouchHands01"],
+      ["Gesture_SqueezeHand01"],
+      ["Body_Idle"]
+    ]
+  },
+    "Thinking":{
+    "keywords":[],
+    "gestures":[
+      ["Gesture_TouchHands01"],
+      ["Gesture_SqueezeHand01"],
+      ["Gesture_Think01"],
+      ["Gesture_ScratchTempleLf01"]
+    ]
+  }
+}

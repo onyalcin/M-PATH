@@ -1,0 +1,214 @@
+{
+  "agree": {
+    "keywords": ["yes", "yeah", "sure", "here", "right", "yep"],
+    "gestures": [
+      ["agreement-nod"],
+      ["this"]
+    ]
+  },
+  "test": {
+    "keywords": ["delicious", "muffin", "corn", "cake"],
+    "gestures": [
+      ["gesture_shoo", "f_what_have_I_done"]
+    ]
+  },
+  "aw": {
+    "keywords": ["puppies", "kittens", "cute", "dog", "puppy", "kitten"],
+    "gestures": [
+      ["gesture_aw", "f_joy"]
+    ]
+  },
+  "annoyed":{
+    "keywords":["jersey"],
+    "gestures":[
+      ["emphatic-no", "f_Squint"],
+      ["f_Squint"]
+    ]
+  },
+  "stop":{
+    "keywords":["stop", "boring"],
+    "gestures":[
+      ["emphatic-no", "f_Concerned"],
+      ["this", "f_Concerned"],
+      ["f_Concerned"]
+    ]
+  },
+  "disagree":{
+    "keywords":["no", "nah", "nothing", "cannot", "can't", "don't", "didn't", "couldn't", "isn't", "wasn't", "never", "not", "nope"],
+    "gestures":[   
+      ["disagreement-shake", "f_Concerned"],
+      ["emphatic-no", "f_Concerned"],
+      ["f_Concerned"]
+    ]
+  },
+  "however":{
+    "keywords":["but", "however"],
+    "gestures":[
+      ["explaining-beat"],
+      ["this"]
+    ]
+  },
+  "excited":{
+    "keywords":["really", "very", "quite", "wonderful", "great", "absolutely", "huge", "fantastic", "amazing", "important", "good", "nice", "wow"],
+    "gestures":[
+      ["gesture_you", "f_Surprised"],
+      ["shakinghead", "f_Surprised"],
+      ["f_Surprised"]
+    ]
+  },
+  "comparison":{
+    "keywords":["on one hand", "firstly",  "then", "so", "sure", "on the other hand"],
+    "gestures":[
+      ["thisandthat"],
+      ["explaining-beat"]
+    ]
+  },
+  "additive":{
+    "keywords":["besides", "never the less",  "anyway"],
+    "gestures":[
+      ["lookaway"]
+    ]
+  },
+  "okay":{
+    "keywords":["so", "okay", "there", "ookay"],
+    "gestures":[
+      ["gesture_you"],
+      ["this"]
+    ]
+  },
+  "example":{
+    "keywords":["example", "then", "well", "instance"],
+    "gestures":[
+      ["gesture_you"],
+      ["this"]
+    ]
+  },
+  "dominant":{
+    "keywords":["exactly", "listen", "must"],
+    "gestures":[
+      ["explaining-beat"],
+      ["agreement-nod"],
+      ["f_Squint"]
+    ]
+  },
+  "inclusive":{
+    "keywords":["everything", "all", "whole", "full", "completely", "mostly"],
+    "gestures":[
+      ["this"],
+      ["this-and-that"]
+    ]
+  },
+  "me":{
+    "keywords":["me", "my", "i", "mine", "AI", "ay eye", "personality", "bots", "myself", "robots"],
+    "gestures":[
+      ["gesture_me"]
+    ]
+  },
+  "question":{
+    "keywords":["why", "when", "what", "where", "how", "do"],
+    "gestures":[
+      ["this"],
+      ["gesture_you"],
+      ["explaining-beat"],
+      ["f_Surprised"]
+    ]
+  },
+  "you":{
+    "keywords":["you"],
+    "gestures":[
+      ["gesture_you"]
+    ]
+  },
+  "uncertain":{
+    "keywords":["I don't know", "well", "maybe", "might", "perhaps", "potentially"],
+    "gestures":[
+      ["emphatic-no"],
+      ["explaining-beat"]
+    ]
+  },
+  "beats":{
+    "keywords":[],
+    "gestures":[
+      ["Gesture_LeftHand"],
+      ["Gesture_RightHand"],
+      ["Gesture_BeatHighBt02"],
+      ["Gesture_BeatLowBt01"],
+      ["Gesture_BeatMidBt01"],
+      ["Gesture_BeatLowLf01"],
+      ["Gesture_BeatLowLf02"],
+      ["Gesture_BeatLowRt01"],
+      ["Gesture_BeatMidLf01"],
+      ["Gesture_ChopBoth01"],
+      ["Gesture_ChopLf01"],
+      ["Gesture_ExampleLf01"],
+      ["Gesture_IndicateRightRt01"],
+      ["Gesture_OfferBoth01"],
+      ["Gesture_OfferLf01"],
+      ["Gesture_DEITIC"],
+      ["Gesture_BEAT"],
+      ["Gesture_ME"],
+      ["Gesture_YOU"],
+      ["Gesture_DEITIC"]
+    ]
+  },
+  "sad":{
+    "keywords":[],
+    "gestures":[
+      ["Face_1l","Face_1r","Face_4l","Face_4r","Face_6.58"]
+    ]
+  },
+  "happy":{
+    "keywords":[],
+    "gestures":[
+      ["Face_12","Face_6"]
+    ]
+  },
+  "angry":{
+    "keywords":[],
+    "gestures":[
+      ["Face_2l","Face_2r","Face_4l","Face_4r","Face_5.68","Face_7.5","Face_10","Face_26.22"]
+    ]
+  },
+  "shock":{
+    "keywords":[],
+    "gestures":[
+      ["Face_1l","Face_1r","Face_5.86","Face_26.73"]
+    ]
+  },
+  "fear":{
+    "keywords":[],
+    "gestures":[
+      ["Face_1l.6","Face_1r.6","Face_5.7","Face_26.25","Face_38"]
+    ]
+  },
+  "gazing":{
+    "keywords":[],
+    "gestures":[
+      ["enRightTilt"],
+      ["enLeftTilt"],
+      ["enRightDown"],
+      ["enLeftDown"],
+      ["enDown"],
+      ["enLeft1"],
+      ["enLeft2"],
+      ["enLeft3"],
+      ["enRight1"],
+      ["enRight2"],
+      ["enRight3"]
+    ]
+  },
+  "listening":{
+    "keywords":[],
+    "gestures":[
+      ["enLeft1"]
+    ]
+  },
+  "waiting":{
+    "keywords":[],
+    "gestures":[
+      ["TouchHands01"],
+      ["SqueezeHand01"],
+      ["Think01","ScratchTempleLf01"]
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "positive":[
+    "Glad to hear",
+    "Awesome",
+    "Nice to hear that",
+    "I'm glad",
+    "That is great",
+    "Good to hear",
+    "That's nice"
+  ],
+  "negative":[
+    "I'm sorry to hear that.",
+    "I'm sorry you aren't feeling good.",
+    "I'm so sorry you feel like that.",
+    "I'm sorry, it's going to get better.",
+    "Well that's not ideal.",
+    "That's too bad",
+    "Sorry to hear that.",
+    "I promise it gets better. ",
+    "I'm sorry, but I will try to help."
+  ],
+  "neutral":[
+    "Okay",
+    "That's not bad",
+    "I see"
+  ],
+  "reject":[
+    "No problem",
+    "Sure"
+  ],
+  "accept":[
+    "Great",
+    "Okay"
+  ],
+  "explain":
+          [
+            "Can you explain that a bit?"
+          ],
+  "negative end":[
+    "Overall, It sounds like you might use a little help in general. Try to make an appointment with the student counselling services at S F U"
+  ],
+  "positive end":[
+    "Overall, It looks like you are doing very well. Let your friends know about our counselling services, so we can spread the word for the students who might need it"
+  ],
+  "positive end2":[
+    "Overall, It looks like you are doing good. If you will ever need help in the future, we are here to help you in the student counselling services at S F U"
+  ]
+}

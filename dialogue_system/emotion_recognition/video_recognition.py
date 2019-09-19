@@ -16,6 +16,10 @@ from .utils.face_classification.preprocessor import preprocess_input
 
 from .recognizer import VideoRecognizer, VideoRecResult
 
+import os
+
+dirname = os.path.dirname(__file__)
+
 
 logger = logging.getLogger().getChild(__name__)
 
@@ -25,12 +29,8 @@ logger = logging.getLogger().getChild(__name__)
 class FaceVideoRecognizer(VideoRecognizer):
     def __init__(self):
         # parameters for loading data and images
-        detection_model_path = 'C:\\Users\\steve\\Documents\\MyChatterBot\\BOT\\dialogue_system\\dialogue_system\\' \
-                               'emotion_recognition\\utils\\face_classification\\trained_models\\detection_models\\' \
-                               'haarcascade_frontalface_default.xml'
-        emotion_model_path = 'C:\\Users\\steve\\Documents\\MyChatterBot\\BOT\\dialogue_system\\dialogue_system\\' \
-                             'emotion_recognition\\utils\\face_classification\\trained_models\\' \
-                             'emotion_models\\fer2013_mini_XCEPTION.102-0.66.hdf5'
+        detection_model_path = dirname+ "\\utils\\face_classification\\trained_models\\detection_models\\haarcascade_frontalface_default.xml"
+        emotion_model_path = dirname + "\\utils\\face_classification\\trained_models\\emotion_models\\fer2013_mini_XCEPTION.102-0.66.hdf5"
         self.emotion_labels = get_labels('fer2013')  # 0: Angry, 1: Disgust, 2: Fear, 3: Happy,
         #  4: Sad, 5:Surprise, 6:Neutral
 
@@ -132,12 +132,8 @@ class FaceVideoRecognizer(VideoRecognizer):
 class EmotionVideoRecognizer(VideoRecognizer):
     def __init__(self):
         # parameters for loading data and images
-        detection_model_path = 'C:\\Users\\steve\\Documents\\MyChatterBot\\BOT\\dialogue_system\\dialogue_system\\' \
-                               'emotion_recognition\\utils\\face_classification\\trained_models\\detection_models\\' \
-                               'haarcascade_frontalface_default.xml'
-        emotion_model_path = 'C:\\Users\\steve\\Documents\\MyChatterBot\\BOT\\dialogue_system\\dialogue_system\\' \
-                             'emotion_recognition\\utils\\face_classification\\trained_models\\' \
-                             'emotion_models\\fer2013_mini_XCEPTION.102-0.66.hdf5'
+        detection_model_path = dirname+ "\\utils\\face_classification\\trained_models\\detection_models\\haarcascade_frontalface_default.xml"
+        emotion_model_path = dirname + "\\utils\\face_classification\\trained_models\\emotion_models\\fer2013_mini_XCEPTION.102-0.66.hdf5"
         # loading models
         self.face_detection = load_detection_model(detection_model_path)
         self.emotion_classifier = load_model(emotion_model_path, compile=False)
@@ -206,12 +202,9 @@ class EmotionVideoRecognizer(VideoRecognizer):
 class Emo_VideoRecognizer(VideoRecognizer):
     def __init__(self):
         # parameters for loading data and images
-        detection_model_path = 'C:\\Users\\steve\\Documents\\MyChatterBot\\BOT\\dialogue_system\\dialogue_system\\' \
-                               'emotion_recognition\\utils\\face_classification\\trained_models\\detection_models\\' \
-                               'haarcascade_frontalface_default.xml'
-        emotion_model_path = 'C:\\Users\\steve\\Documents\\MyChatterBot\\BOT\\dialogue_system\\dialogue_system\\' \
-                             'emotion_recognition\\utils\\face_classification\\trained_models\\' \
-                             'emotion_models\\fer2013_mini_XCEPTION.102-0.66.hdf5'
+        print('dirname:', dirname)
+        detection_model_path = dirname+ "\\utils\\face_classification\\trained_models\\detection_models\\haarcascade_frontalface_default.xml"
+        emotion_model_path = dirname + "\\utils\\face_classification\\trained_models\\emotion_models\\fer2013_mini_XCEPTION.102-0.66.hdf5"
         # loading models
         self.face_detection = load_detection_model(detection_model_path)
         self.emotion_classifier = load_model(emotion_model_path, compile=False)

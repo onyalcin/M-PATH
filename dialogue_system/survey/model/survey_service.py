@@ -61,7 +61,10 @@ class SurveyService:
     def check_answer(self, question, answer_text):
         if question.type == "multiple_choice":
             choices_text = question.get_choices_list()
-            answer_match = self.similarity_model.predict(answer_text)
+            if answer_text in choices_text:
+                answer_match = answer_text
+            else:
+                answer_match = self.similarity_model.predict(answer_text)
             if answer_match:
                 return choices_text.index(answer_match)
             else:

@@ -1,0 +1,59 @@
+{
+  "inner brow raise":{
+    "gestures":[{"category":"Face", "name":"1"}]
+  },
+  "brow raise":{
+    "gestures":[{"category":"Face", "name":"2"}]
+  },
+  "brow furrow":{
+    "gestures":[{"category":"Face", "name":"4"}]
+  },
+  "eye widen":{
+    "gestures":[{"category":"Face", "name":"5"}]
+  },
+  "cheek raise":{
+    "gestures":[{"category":"Face", "name":"6"}]
+  },
+  "lid tighten":{
+    "gestures":[{"category":"Face", "name":"99"}]
+  },
+  "nose wrinkle":{
+    "gestures":[{"category":"Face", "name":"9"}]
+  },
+  "upper lip raise":{
+    "gestures":[{"category":"Face", "name":"99"}]
+  },
+  "dimpler":{
+    "gestures":[{"category":"Face", "name":"99"}]
+  },
+  "lip corner depressor":{
+    "gestures":[{"category":"Face", "name":"15"}]
+  },
+  "chin raise":{
+    "gestures":[{"category":"Face", "name":"17"}]
+  },
+  "lip pucker":{
+    "gestures":[{"category":"Face", "name":"99"}]
+  },
+  "lip stretch":{
+    "gestures":[{"category":"Face", "name":"99"}]
+  },
+  "lip press":{
+    "gestures":[{"category":"Face", "name":"99"}]
+  },
+  "mouth open":{
+    "gestures":[]
+  },
+  "jaw drop":{
+    "gestures":[{"category":"Face", "name":"99"}]
+  },
+  "lip suck":{
+    "gestures":[{"category":"Face", "name":"99"}]
+  },
+  "eye closure":{
+    "gestures":[{"category":"Face", "name":"43"}]
+  },
+  "smile":{
+    "gestures":[{"category":"Face", "name":"12"}]
+  }
+}

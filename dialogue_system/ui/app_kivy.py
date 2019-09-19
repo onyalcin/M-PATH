@@ -22,6 +22,10 @@ class MainScreen(BoxLayout):
         self._talk_btn.bind(on_press=self._on_talk_btn_pressed)
         self._talk_btn.bind(on_release=self._on_talk_btn_released)
 
+        self._face_btn = Button(text='Hold to Face Match')
+        self._face_btn.bind(on_press=self._on_face_btn_pressed)
+        self._face_btn.bind(on_release=self._on_face_btn_released)
+
         layout = BoxLayout(orientation='horizontal')
         layout.add_widget(Label(text='Text input'))
         layout.add_widget(self._text_input)
@@ -29,11 +33,19 @@ class MainScreen(BoxLayout):
 
         self.add_widget(self._talk_btn)
 
+        self.add_widget(self._face_btn)
+
     def _on_talk_btn_pressed(self, inst):
         self._controller.start_listening()
 
     def _on_talk_btn_released(self, inst):
         self._controller.stop_listening()
+
+    def _on_face_btn_pressed(self, inst):
+        self._controller.start_face_match()
+
+    def _on_face_btn_released(self, inst):
+        self._controller.stop_face_match()
 
     def _on_text_input_validate(self, inst):
         self._controller.process_text_input(inst.text)
@@ -51,5 +63,5 @@ class App(App):
 
 def run(controller):
     Config.set('graphics', 'width', '250')
-    Config.set('graphics', 'height', '100')
+    Config.set('graphics', 'height', '150')
     App(controller=controller).run()

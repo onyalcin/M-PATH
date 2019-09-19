@@ -9,6 +9,7 @@ from scipy import signal
 
 from .recognizer import AudioRecognizer
 
+dirname = os.path.dirname(__file__)
 
 # TODO: Testing the functionality
 class RavdessAudioRecognizer(AudioRecognizer):
@@ -22,10 +23,10 @@ class RavdessAudioRecognizer(AudioRecognizer):
 
         self.categories = ["calm", "angry", "sad", "disgust", "happy", "fearful"]
 
-        model_path = 'dialogue_system\\emotion_recognition\\utils\\audio\\models\\'
+        model_path = dirname+ "\\utils\\audio\\models\\"
 
-        model_location = "fckin_RAVDESS_Audio.h5"
-        arch_location = "fckin_arch_RAVDESS.json"
+        model_location = "RAVDESS_Audio.h5"
+        arch_location = "arch_RAVDESS.json"
         with open(os.path.join(model_path, arch_location), 'r') as arch_file:
             arch = json.load(arch_file)
         weights_location = "weights_RAVDESS.h5"
@@ -78,12 +79,11 @@ class AudioAVRecognizer(AudioRecognizer):
         self.audioSeconds = 0.3
         self.sr = 16000
 
-        model_path = 'C:\\Users\\steve\\Documents\\MyChatterBot\\BOT\\dialogue_system\\dialogue_system\\' \
-                     'emotion_recognition\\utils\\audio\\models\\'
+        model_path = dirname + "\\utils\\audio\\models\\"
 
-        weights_location = "fckin_weights.h5"
-        arch_location = "fckin_arch.json"
-        model_location = "fckin_heck_yea.h5"
+        weights_location = "weights.h5"
+        arch_location = "arch.json"
+        model_location = "heck_yea.h5"
 
         with open(os.path.join(model_path, arch_location), 'r') as arch_file:
             arch = json.load(arch_file)

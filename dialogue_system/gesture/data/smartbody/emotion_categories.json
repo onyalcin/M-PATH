@@ -1,0 +1,118 @@
+{
+  "sadness": {
+    "keywords": [],
+    "gestures": [
+      [
+        "Face_1l",
+        "Face_1r",
+        "Face_4.5l",
+        "Face_4.5r",
+        "Face_6.34"
+      ]
+    ]
+  },
+  "sad": {
+    "keywords": [],
+    "gestures": [
+      [
+        "Face_1l",
+        "Face_1r",
+        "Face_4.5l",
+        "Face_4.5r",
+        "Face_6.34"
+      ]
+    ]
+  },
+  "joy": {
+    "keywords": [],
+    "gestures": [
+      [
+        "Face_1.5l",
+        "Face_12l",
+        "Face_1.5r",
+        "Face_12r",
+        "Face_6.05",
+        "Face_2.2l",
+        "Face_2.2r",
+        "Face_5.2"
+      ]
+    ]
+  },
+  "anger": {
+    "keywords": [],
+    "gestures": [
+      [
+        "Face_2.75l",
+        "Face_2.75r",
+        "Face_4l",
+        "Face_4r",
+        "Face_5.85",
+        "Face_7.62"
+      ]
+    ]
+  },
+  "surprise": {
+    "keywords": [],
+    "gestures": [
+      [
+        "Face_1l",
+        "Face_1r",
+        "Face_5.7",
+        "Face_12.6l",
+        "Face_2l",
+        "Face_12.6r",
+        "Face_2r"
+      ]
+    ]
+  },
+  "fear": {
+    "keywords": [],
+    "gestures": [
+      [
+        "Face_1.85l",
+        "Face_1.85r",
+        "Face_5"
+      ]
+    ]
+  },
+  "contempt": {
+    "keywords": [],
+    "gestures": [
+      [
+        "Face_131"
+      ]
+    ]
+  },
+  "disgust": {
+    "keywords": [],
+    "gestures": [
+      [
+        "Face_1l",
+        "Face_4.5r",
+        "Face_1l",
+        "Face_4.5r",
+        "Face_6.34"
+      ]
+    ]
+  },
+  "neutral": {
+    "keywords": [],
+    "gestures": [
+      [
+        "Face_1l.0",
+        "Face_1r.0",
+        "Face_2l.0",
+        "Face_2r.0",
+        "Face_4l.0",
+        "Face_4r.0",
+        "Face_12l.0",
+        "Face_12r.0",
+        "Face_5.0",
+        "Face_6.0",
+        "Face_7.0",
+        "Face_26.0",
+        "Face_131.0"
+      ]
+    ]
+  }
+}

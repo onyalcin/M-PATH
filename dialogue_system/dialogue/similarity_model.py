@@ -1,4 +1,4 @@
-import fastText as ft
+import fasttext as ft
 import logging
 
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer

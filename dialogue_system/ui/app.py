@@ -15,6 +15,12 @@ class App(tk.Frame):
     def talk_btn_up(self, event):
         self._controller.stop_listening()
 
+    def face_btn_down(self, event):
+        self._controller.start_face_match()
+
+    def face_btn_up(self, event):
+        self._controller.stop_face_match()
+
     def createWidgets(self):
         self.text_entry = tk.Entry()
         self.text_entry.pack({'side': 'top'})
@@ -24,6 +30,12 @@ class App(tk.Frame):
         self.talk_btn.pack({'side': 'bottom'})
         self.talk_btn.bind('<ButtonPress-1>', self.talk_btn_down)
         self.talk_btn.bind('<ButtonRelease-1>', self.talk_btn_up)
+
+        self.face_btn = tk.Button(self)
+        self.face_btn['text'] = 'Face',
+        self.face_btn.pack({'side': 'bottom'})
+        self.face_btn.bind('<ButtonPress-1>', self.face_btn_down)
+        self.face_btn.bind('<ButtonRelease-1>', self.face_btn_up)
 
 def run(controller):
     root = tk.Tk()

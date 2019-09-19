@@ -84,6 +84,15 @@ class Controller:
 
         self._agent.transition_thinking()
 
+    def start_face_match(self):
+        logger.info('Starting to face match')
+        self._video_input.start(
+            callback=self._on_frame)
+
+    def stop_face_match(self):
+        logger.info('Stopping to face match')
+        self._video_input.stop()
+
     def _on_microphone_data(self, sr_task, chunk, final):
         logger.debug('Audio chunk received, final: %s', final)
         sr_task.submit(chunk, final)
@@ -108,12 +117,7 @@ class Controller:
         logger.info('Processing input: %s', text)
         # TODO: adding word/face based emotion recognition here
         # check if it is a trigger
-        if self._survey_controller.check_goal_done(self.user.id):  # If goal is done, do post-survey
-            user_mood = self.user.get_mood()
-            self._survey_controller.on_input(self.user.id, '@survey test')
-            responses = self._survey_controller.on_input(self.user.id, user_mood[0])
-        else:
-            responses = self._survey_controller.on_input(self.user.id, text)
+        responses = self._survey_controller.on_input(self.user.id, text)
         if responses is not None:
             self._context = 'survey'
             self._on_survey(responses)
@@ -131,6 +135,12 @@ class Controller:
             self._send_response(responses['next'])
         else:
             self._send_response('Thank you so much for taking the survey!')
+            if self._survey_controller.check_goal_done(self.user.id):  # If goal is done, do post-survey
+                user_mood = self.user.get_mood()
+                logger.info("USER MOOD: %s", user_mood)
+                self._survey_controller.on_input(self.user.id, '@survey end')  # changed test to end
+                responses = self._survey_controller.on_input(self.user.id, user_mood[0])
+                self._on_survey(responses)
 
     def _on_input_qa(self, text):
         clean_query = text_normalization.clean(text)

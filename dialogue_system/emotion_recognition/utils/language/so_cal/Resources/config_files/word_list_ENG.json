@@ -1,0 +1,16 @@
+{"not_wanted_adj" :["other", "same", "such", "first", "next", "last", "few", "many", "less", "more", "least", "most"],
+"not_wanted_adv" :["really", "especially", "apparently", "actually", "evidently", "suddenly", "completely","honestly", "basically", "probably", "seemingly", "nearly", "highly", "exactly", "equally", "literally", "definitely", "practically", "obviously", "immediately", "intentionally", "usually", "particularly", "shortly", "clearly", "mildly", "sincerely", "accidentally", "eventually", "finally", "personally", "importantly", "specifically", "likely", "absolutely", "necessarily", "strongly", "relatively", "comparatively", "entirely", "possibly", "generally", "expressly", "ultimately", "originally", "initially", "virtually", "technically", "frankly", "seriously", "fairly",  "approximately", "critically", "continually", "certainly",  "regularly", "essentially", "lately", "explicitly", "right", "subtly",  "lastly", "vocally", "technologically", "firstly", "tally", "ideally", "specially", "humanly", "socially", "sexually", "preferably", "immediately", "legally", "hopefully", "largely", "frequently", "factually", "typically"],
+"not_wanted_verb" :[],
+"negators" :["not", "no", "n't", "neither", "nor", "nothing", "never", "none", "lack", "lacked", "lacking", "lacks", "missing", "without", "absence", "devoid"],
+"punct" :[".", ",", ";", "!", "?", ":", ")", "(", "\"", "'", "-"],
+"sent_punct" :[".", ";", "!", "?", ":", "\n", "\r"],
+"skipped" :{"JJ": ["even", "to", "being", "be", "been", "is", "was", "'ve", "have", "had", "do", "did", "done", "of", "as", "DT", "PSP$"], "RB": ["VB", "VBZ", "VBP", "VBG"], "VB":["TO", "being", "been", "be"], "NN":["DT", "JJ", "NN", "of", "have", "has", "come", "with", "include"]},
+"comparatives" :["less", "more", "as"],
+"superlatives" :["most", "least"],
+"definites" :["the","this", "POS", "PRP$"],
+"noun_tag" :"NN",
+"verb_tag" :"VB",
+"adj_tag" :"JJ",
+"adv_tag" :"RB",
+"macro_replace" :{"#NP?#": "[PDT]?_[DET|PRP|PRP$|NN|NNP]?_[POS]?_[NN|NNP|JJ]?_[NN|NNP|NNS|NNPS]?","#PER?#": "[me|us|her|him]?","#give#": "give|gave|given","#fall#": "fall|fell|fallen","#get#": "get|got|gotten","#come#": "come|came","#go#": "go|went|gone", "#show#": "show|shown","#make#": "make|made","#hang#": "hang|hung","#break#": "break|broke|broken", "#see#": "see|saw|seen", "#be#": "be|am|are|was|were|been", "#bring#": "bring|brought", "#think#" : "think|thought", "#have#": "has|have|had", "#blow#": "blow|blew", "#build#": "build|built", "#do#": "do|did|done", "#can#": "can|could", "#grow#":"grow|grew|grown", "#hang#": "hang|hung", "#run#": "run|ran", "#stand#": "stand|stood", "#string#": "string|strung", "#hold#" : "hold|held", "#take#" : "take|took|taken"}
+}
