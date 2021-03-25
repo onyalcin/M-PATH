@@ -79,7 +79,7 @@ pytest==4.0.2
 python-dateutil==2.7.5
 python-Levenshtein==0.12.0
 pytz==2018.7
-PyYAML==5.1
+PyYAML==5.4
 requests==2.21.0
 resampy==0.2.1
 rsa==3.4.2
