@@ -58,7 +58,7 @@ opencv-contrib-python==3.4.4.19
 opencv-python==3.4.4.19
 pandas==0.23.4
 pbr==3.1.1
-Pillow==5.3.0
+Pillow==8.2.0
 plac==0.9.6
 pluggy==0.8.0
 ply==3.8
