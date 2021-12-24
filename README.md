@@ -4,7 +4,7 @@ An Empathic Embodied Conversational Agent
 This repository includes the empathic dialogue management system for an embodied conversational agent, which is created at iVizLab, in Simon Fraser University by Ozge Nilay Yalcin.
 You can find details about this project at :
 
-http://www.sfu.ca/~oyalcin/project/empathy/ 
+https://onyalcin.github.io/project/empathy/
 
 https://ivizlab.org/research/ai-affective-virtual-human/
 
@@ -12,7 +12,7 @@ To cite the project and code:
 
 Yalçın, Ö. N., & DiPaola, S. (2019, August). M-path: a conversational system for the empathic virtual agent. In Biologically Inspired Cognitive Architectures Meeting (pp. 597-607). Springer, Cham.
 
-Yalçın, Ö. N. (in press) Empathy Framework for Embodied Conversational Agents. Cognitive Systems Research.
+Yalçın, Ö. N. (2020) Empathy Framework for Embodied Conversational Agents. Cognitive Systems Research.
 
 ```
 @InProceedings{10.1007/978-3-030-25719-4_78,
@@ -31,7 +31,7 @@ isbn="978-3-030-25719-4"
 ```
 
 ## Getting Started
-The project is written on Python and works on Python >= 3.6
+The project is written on Python and works on Python = 3.6 or 3.7
 
 This project uses Smartbody character animation system as a character animation platform in Windows. Download Smartbody from: http://smartbody.ict.usc.edu/
 
@@ -52,8 +52,8 @@ pip install -r requirements.txt
 All of the models used in M-PATH are included in the github except the fine-tuned language categorization model for surveys, which should be downloaded to:
 https://github.com/onyalcin/M-PATH/tree/master/dialogue_system/dialogue/utils
 
-using following linK:
-https://researchdata.sfu.ca/islandora/object/islandora%3A10713
+using following link:
+https://doi.org/10.20383/102.0534
 
 ## Running M-Path
 1. Start Smartbody and make sure ActiveMQ is running
