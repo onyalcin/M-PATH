@@ -1595,9 +1595,21 @@ brad.setStringAttribute('lipSyncSetName', 'default')
 brad.setBoolAttribute('usePhoneBigram', True)
 brad.setBoolAttribute('lipSyncSplineCurve', True)
 brad.setDoubleAttribute('lipSyncSmoothWindow', .2)
+
+# Speech Setup
 #for tts speech, enable the next 2 lines -- setVoice to remote and setVoiceCode to one of the available voices
-brad.setStringAttribute('voiceCode', 'CereVoice|Adam|-|English|(East|Coast|America)')
+# Microsoft Voice David
+brad.setVoiceCode('Microsoft|David|Desktop')
+# For CereVoice Setup
+#brad.setStringAttribute('voiceCode', 'CereVoice|Adam|-|English|(East|Coast|America)')
 brad.setStringAttribute('voice', 'remote')
+#for local speech using wav files, enable the next 3 lines setVoice to local and set up the audiofile
+#brad.setVoice('local')
+#brad.setStringAttribute("voice", "audiofile")
+#brad.setStringAttribute("voiceCode", ".") #if all sound files are in the same dir, use '.', otherwise name
+#bml.execBML("ChrBrad", '<speech ref="line1"/>') this is how to play introduction.wav
+#<speech type="text/plain">What is your name?</speech>
+
 brad.setStringAttribute('utterancePolicy', 'queue')
 brad.setBoolAttribute('gestureUseBlends', True)
 # setup locomotion
